@@ -1,0 +1,15 @@
+var http=require('http')
+
+var server=http.createServer((function(request,response)
+
+{
+
+	response.writeHead(200,	{"Content-Type" : "text/plain"});
+
+	response.end("My name is Hritik Bisht ,I am from Graphic Era Hill University.\n");
+
+}));
+
+server.listen(7000);
+
+console.log("Listening to the server...........");
