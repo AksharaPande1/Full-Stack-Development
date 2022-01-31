@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+ <style>
+ div {
+ border: 1px solid Blue;
+ width: 100%;
+ height: 50px;
+ display: block;
+ margin-bottom: 10px;
+ text-align:center;
+ background-color:PowderBlue;
+ }
+ </style>
+</head>
+<body ng-app="" ng-init="fruits=['apple','banana','Grapes','mango','Orange']">
+ <ol>
+ <h3><li ng-repeat="name in fruits">
+ {{name}}
+ </li></h3>
+ </ol>
+<div ng-repeat="name in fruits">
+ <h3>{{name}}</h3>
+ </div>
+</body>
+</html>
