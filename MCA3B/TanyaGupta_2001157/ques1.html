@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-controller="Sctrl">
+        <div ng-repeat="employee in employees track by $index">
+            <p>{{employee.id}} {{employee.name}} {{employee.dept}}</p>
+            <button type="button" ng-click="cloneItem(employee)"> CLICK HERE TO CLONE</button>
+        </div>
+</body>
+</html>
