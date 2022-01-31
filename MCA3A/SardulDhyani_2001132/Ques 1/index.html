@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Sardul Dhyani, Ques 1</title>
+  </head>
+
+  <body>
+    <h1>Full Stack Question 1</h1>
+
+    <div
+      ng-app=""
+      ng-init="students = [{section:'A',name:'Sardul Dhyani'}, 
+         {section:'B',name:'Ankit Phondani'}, {section:'A',name:'Student 1'}, {section:'B',name:'Student 2'}, {section:'C',name:'Student 3'}]"
+    >
+      <p>Hello <span ng-bind="name"></span>!</p>
+      <p>List of Students with section:</p>
+
+      <ol>
+        <li ng-repeat="student in students">
+          {{ 'Student Name: ' + student.name + ', Section: ' + student.section
+          }}
+        </li>
+      </ol>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  </body>
+</html>
