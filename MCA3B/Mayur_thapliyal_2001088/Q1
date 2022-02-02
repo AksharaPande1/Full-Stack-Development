@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="items=[
+{name:'item1',price:100},
+{name:'item2',price:200},
+{name:'item3',price:300}]">
+
+<p>cloning the items:</p>
+<ul>
+  <li ng-repeat="x in items">
+  {{ x.name + ', ' + x.price }}</li>
+</ul>
+
+</div>
+
+</body>
+</html>
