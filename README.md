@@ -10,3 +10,8 @@ A question paper will be uploaded to this repository inside "MCA3section" on sch
 3. You need to keep all of your code and output inside same directory
 
 
+
+Ques 1: Write a program to create an item collection and clones the items using AngularJS directives. (7.5 marks)
+
+
+Ques 2: Write a program to create an HTTP server which can communicate between client and the server.  (7.5 marks)
